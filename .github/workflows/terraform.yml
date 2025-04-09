@@ -11,7 +11,7 @@ on:
 jobs:
   terraform:
     name: Terraform
-    runs-on: [self-hosted, k8s]
+    runs-on: [my-runner-set]
 
     # Define environment variables
     env:
