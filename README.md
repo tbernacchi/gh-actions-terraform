@@ -6,15 +6,6 @@
 	<img align="center"  src=/.github/assets/img/github-actions.png>
 </div> 
 
-📦 **GitHub Actions** lab to automate infrastructure provisioning with **Terraform**.
-
----
-
-## 📌 Objective
-
-This project demonstrates a basic integration between **Terraform** and **GitHub Actions**.
----
-
 ## 📁 Project Structure
 
 - `main.tf` – Main Terraform configuration.
