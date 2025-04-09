@@ -32,7 +32,9 @@ jobs:
 
       # Initialize Terraform
       - name: Terraform Init
-        run: terraform init
+        run: | 
+          terraform init
+        shell: bash
 
       # Validate Terraform configuration
       - name: Terraform Validate
