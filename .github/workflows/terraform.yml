@@ -52,5 +52,5 @@ jobs:
 
       # Apply changes(only push to main)
       - name: Terraform Apply
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main' && !contains(github.event.head_commit.message, '[skip ci]')
         run: terraform apply -auto-approve tfplan
