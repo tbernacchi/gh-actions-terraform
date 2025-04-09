@@ -11,7 +11,7 @@ on:
 jobs:
   terraform:
     name: Terraform
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, k8s]
 
     # Define environment variables
     env:
