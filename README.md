@@ -1,13 +1,18 @@
 # gh-actions-terraform
 
+> This project is a simple example of how to use GitHub Actions to automate infrastructure provisioning with Terraform.
+
+<div align=>
+	<img align="center"  src=/.github/assets/img/github-actions.png>
+</div> 
+
 📦 **GitHub Actions** lab to automate infrastructure provisioning with **Terraform**.
 
 ---
 
 ## 📌 Objective
 
-This project demonstrates a basic integration between **Terraform** and **GitHub Actions**, aiming to automate the execution of Terraform plans through a CI/CD pipeline.
-
+This project demonstrates a basic integration between **Terraform** and **GitHub Actions**.
 ---
 
 ## 📁 Project Structure
@@ -21,9 +26,18 @@ This project demonstrates a basic integration between **Terraform** and **GitHub
 
 ## 🚀 How to Use
 
-1. **Setup LocalStack:**
+1. **Clone the repository:**
 
-Make sure [Docker](https://docs.docker.com/get-docker/) is installed. Start `LocalStack` by running:
+```bash
+git clone https://github.com/your-user/gh-actions-terraform.git
+cd gh-actions-terraform
+```
+
+2. **Setup LocalStack:**
+
+Make sure [Docker](https://docs.docker.com/get-docker/) is installed. 
+
+Start `LocalStack` by running:
 
 ```bash
 cd localstack
@@ -31,7 +45,7 @@ docker compose up -d
 ```
 More info on how to install `LocalStack` can be found [here](https://docs.localstack.cloud/getting-started/installation/).
 
-2. **Setup GitHub Actions Runner:**
+3. **Setup GitHub Actions Runner:**
 
 First you need to create a Personal Access Token (PAT) with the following permissions:
 
@@ -82,14 +96,9 @@ helm install "${INSTALLATION_NAME}" \
     oci://ghcr.io/actions/actions-runner-controller-charts/gha-runner-scale-set
 ```
 
-At this point you should have a runner set up and ready to use, you can check on the GitHub repository settings under `Settings` > `Actions` > `Runners` that the runner is online.
+At this point you should have a runner set up and ready to use.
 
-3. **Clone the repository:**
-
-```bash
-git clone https://github.com/your-user/gh-actions-terraform.git
-cd gh-actions-terraform
-```
+You can check on the GitHub repository settings under `Settings` > `Actions` > `Runners` that the runner is online.
 
 That's it! You can now start pushing commits to the repository and the GitHub Actions workflow will be triggered.
 
