@@ -1,0 +1,48 @@
+name: Terraform CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  terraform:
+    name: Terraform
+    runs-on: ubuntu-latest
+
+    # Define environment variables
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      TF_VAR_bucket_name: "my-unique-bucket-${{ github.run_id }}" # Unique name for the bucket
+
+    steps:
+      # Checkout code
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Setup Terraform
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.5.0
+
+      # Initialize Terraform
+      - name: Terraform Init
+        run: terraform init
+
+      # Validate Terraform configuration
+      - name: Terraform Validate
+        run: terraform validate
+
+      # Generate Terraform plan
+      - name: Terraform Plan
+        run: terraform plan -out=tfplan
+
+      # Apply changes(only push to main)
+      - name: Terraform Apply
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: terraform apply -auto-approve tfplan
