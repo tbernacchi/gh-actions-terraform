@@ -9,7 +9,7 @@
 </div> 
 
 <div align=>
-	<img align="left"  src=.github/assets/img/localstack.png>
+	<img align="left"  src=.github/assets/img/localstack.png height="80">
 </div> 
 
 ## 📁 Project Structure
