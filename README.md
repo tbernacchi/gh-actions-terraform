@@ -5,11 +5,11 @@
 ![github-actions](.github/assets/img/github-actions.png)
 
 <div align=>
-	<img align="right"  src=/.github/assets/img/terraform-T.png>
+	<img align="right"  src=.github/assets/img/terraform.png>
 </div> 
 
 <div align=>
-	<img align="left"  src=/.github/assets/img/localstack.png>
+	<img align="left"  src=.github/assets/img/localstack.png>
 </div> 
 
 ## 📁 Project Structure
