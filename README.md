@@ -8,7 +8,7 @@
 
   <div style="display: flex; flex-direction: column; gap: 10px;">
     <img src="/.github/assets/img/terraform-T.png" height="45">
-    <img src="/.github/assets/img/localstack" height="45">
+    <img src="/.github/assets/img/localstack.png" height="45">
   </div>
 
 ## 📁 Project Structure
