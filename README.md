@@ -99,7 +99,8 @@ That's it! You can now start pushing commits to the repository and the GitHub Ac
 
 ## 📝 Notes
 
-GitHub Actions:
+[GitHub Actions:](https://github.com/features/actions)
+
 - [Hosting your own runners](https://docs.github.com/en/actions/hosting-your-own-runners)
 - [GitHub Actions Runner Controller](https://github.com/actions/actions-runner-controller)
 - [Quickstart for Actions Runner Controller](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners-with-actions-runner-controller/quickstart-for-actions-runner-controller)
