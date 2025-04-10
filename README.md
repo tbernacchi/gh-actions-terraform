@@ -1,10 +1,15 @@
 # gh-actions-terraform
 
-> This project is a simple example of how to use GitHub Actions to automate infrastructure provisioning with Terraform.
+> This project is a simple example of how to use GitHub Actions to provision infrastructure with Terraform.
 
 <div align=>
 	<img align="center"  src=/.github/assets/img/github-actions.png>
 </div> 
+
+  <div style="display: flex; flex-direction: column; gap: 10px;">
+    <img src="/.github/assets/img/terraform-T.png" height="45">
+    <img src="/.github/assets/img/localstack" height="45">
+  </div>
 
 ## 📁 Project Structure
 
@@ -35,6 +40,10 @@ cd localstack
 docker compose up -d
 ```
 More info on how to install `LocalStack` can be found [here](https://docs.localstack.cloud/getting-started/installation/).
+
+## ▶️ Github Actions
+
+> For this project we're going to use self-hosted runners to run the workflow in top of a kubernetes cluster.
 
 3. **Setup GitHub Actions Runner:**
 
