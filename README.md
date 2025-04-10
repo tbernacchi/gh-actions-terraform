@@ -2,25 +2,15 @@
 
 > This project is a simple example of how to use GitHub Actions to provision infrastructure with Terraform.
 
-<p align="center">
-  <table>
-    <tr>
-      <!-- Coluna vazia para centralizar -->
-      <td></td>
+![github-actions](.github/assets/img/github-actions.png)
 
-      <!-- Imagem central -->
-      <td align="center">
-        <img src=".github/assets/img/github-actions.png" height="100">
-      </td>
+<div align=>
+	<img align="right"  src=/.github/assets/img/terraform-T.png>
+</div> 
 
-      <!-- Coluna da direita com duas imagens empilhadas -->
-      <td align="left">
-        <img src=".github/assets/img/terraform-T.png" height="45"><br>
-        <img src=".github/assets/img/localstack.png" height="45">
-      </td>
-    </tr>
-  </table>
-</p>
+<div align=>
+	<img align="left"  src=/.github/assets/img/localstack.png>
+</div> 
 
 ## 📁 Project Structure
 
