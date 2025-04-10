@@ -2,12 +2,7 @@
 
 > This project is a simple example of how to use GitHub Actions to provision infrastructure with Terraform.
 
-<p align="center">
-  <img src=".github/assets/img/github-actions.png" height="100">
-  <img src=".github/assets/img/terraform.png" height="45" style="vertical-align: top; margin-left: 10px;">
-  <br>
-  <img src=".github/assets/img/localstack.png" height="45" style="vertical-align: top; margin-left: 110px;">
-</p>
+![github-actions](.github/assets/img/github-actions.png)
 
 ## 📁 Project Structure
 
@@ -104,6 +99,7 @@ That's it! You can now start pushing commits to the repository and the GitHub Ac
 
 ## 📝 Notes
 
+GitHub Actions:
 - [Hosting your own runners](https://docs.github.com/en/actions/hosting-your-own-runners)
 - [GitHub Actions Runner Controller](https://github.com/actions/actions-runner-controller)
 - [Quickstart for Actions Runner Controller](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners-with-actions-runner-controller/quickstart-for-actions-runner-controller)
