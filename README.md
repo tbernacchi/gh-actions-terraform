@@ -13,9 +13,10 @@
 - `providers.tf` – Terraform providers.
 
 The `providers` block is used to define the providers for the Terraform configuration. <br>
+
 In my case I'm using `localstack` as a mock of AWS. <br>
 
-As my kubernetes cluster it's running in top of Rasperry Pi's in a differente network I had to setup `localstack` to be accessible from the cluster. <br>
+As my kubernetes cluster it's running in top of Rasperry Pi's in a differente network I had to setup `localstack` to be accessible from the cluster.
 See `localstack/docker-compose.yml` for more details.
 
 > It provides a simple S3 bucket.
